@@ -1,4 +1,4 @@
-/*BUILT Sun Feb 17 2013 18:09:23 GMT+0100 (CET)*/
+/*BUILT Sun Feb 17 2013 19:55:43 GMT+0100 (CET)*/
 require.register('util.colour', function(module, exports, require) {
   /**
    * Extract colour channels from a colour string (rgb(r,g,b), rrggbb, rgb)
