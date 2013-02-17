@@ -5,9 +5,41 @@
 	"author": "popeindustries <alex@pope-industries.com>",
 	"dependencies": {
 	},
+	"devDependencies": {
+		"mocha": "*",
+		"expect.js": "*",
+		"buddy": "*",
+		"browser-require": "git://github.com/popeindustries/browser-require.git"
+	},
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/popeindustries/util.colour.git"
+	},
+	"testling": {
+		"harness": "mocha-bdd",
+		"files": "test/colour-test.js",
+		"browsers": {
+			"ie": [7,8,9,10],
+			"firefox": [13,17],
+			"chrome": [20,23],
+			"safari": [5.1],
+			"iphone": [6.0],
+			"ipad": [6.0]
+		}
+	},
+	"buddy": {
+		"build": {
+			"js": {
+				"sources": ["test"],
+				"targets": [{
+					"input": "index.js",
+					"output": "test/util.colour.js"
+				}]
+			}
+		}
+	},
+	"scripts": {
+		"test": "./node_modules/.bin/buddy build && open test/test-runner.html"
 	}
 }

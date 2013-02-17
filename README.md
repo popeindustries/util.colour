@@ -1,3 +1,5 @@
+[![browser support](http://ci.testling.com/popeindustries/util.colour.png)](http://ci.testling.com/popeindustries/util.colour)
+
 A collection of Colour utility functions.
 
 ## Usage
