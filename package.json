@@ -14,7 +14,7 @@
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/popeindustries/util.colour.git"
+		"url": "git://github.com/thomaslein/util.colour.git"
 	},
 	"testling": {
 		"harness": "mocha-bdd",
